@@ -20,5 +20,12 @@ public class Question {
     private InterviewSession session;
     private LocalDateTime createdAt;
 
+    public Question(String content, InterviewSession session){
+        this.content = content;
+        this.session = session;
+        this.createdAt = LocalDateTime.now();
+
+    }
+
 
 }
