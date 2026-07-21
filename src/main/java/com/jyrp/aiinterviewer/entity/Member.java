@@ -22,4 +22,10 @@ public class Member {
     private String nickname;
 
     private LocalDateTime createdAt;
+
+    public Member(String email, String nickname) {
+        this.email = email;
+        this.nickname = nickname;
+        this.createdAt = LocalDateTime.now();
+    }
 }

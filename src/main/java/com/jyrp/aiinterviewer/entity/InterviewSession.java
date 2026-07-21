@@ -22,4 +22,10 @@ public class InterviewSession {
     private String status;
     private LocalDateTime createdAt;
 
+    public InterviewSession(String jobPosition) {
+        this.jobPosition = jobPosition;
+        this.status = "IN_PROGRESS";
+        this.createdAt = LocalDateTime.now();
+    }
+
 }
