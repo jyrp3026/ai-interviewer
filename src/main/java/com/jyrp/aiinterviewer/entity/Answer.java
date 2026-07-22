@@ -18,6 +18,20 @@ public class Answer {
     private String content;
     @OneToOne
     private Question question;
+    @Column(length = 2000)
     private String feedback;
     private LocalDateTime createdAt;
+
+    public Answer(String content, Question question) {
+        this.content = content;
+        this.question = question;
+        this.createdAt = LocalDateTime.now();
+    }
+
+    public void addFeedback(String feedback) {
+
+        this.feedback = feedback;
+    }
+
+
 }
