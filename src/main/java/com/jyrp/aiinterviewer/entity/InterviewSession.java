@@ -27,5 +27,8 @@ public class InterviewSession {
         this.status = "IN_PROGRESS";
         this.createdAt = LocalDateTime.now();
     }
+    public void end() {
+        this.status = "DONE";
+    }
 
 }
